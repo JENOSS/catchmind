@@ -13,19 +13,16 @@ $ javac *.java -complie utf-8
 
 ### 1. 서버에서 사용하는 keystore를 만든다.
 
-keytool -list -v -keystore keystore
+$ keytool -genkeypair -alias duke -keyalg RSA -validity 7 -keystore CatchMindKey
 
-### 2.  keystore의 내용을 조사한다.
+### 2. keystore에서 증명서를 export 한다.
 
-keytool -export -alias duke -keystore keystore -rfc -file duke.cer
+$ keytool -export -alias CatchMindcert -keystore CatchMindKey -rfc -file CatchMind.cer
 
-### 3. keystore에서 증명서를 export 한다.
+### 3. 증명서를 이용해 truststore를 만든다.
 
-keytool -import -alias dukecert -file duke.cer -keystore truststore
+$ keytool -import -alias CatchMindcert -file CatchMind.cer -keystore trustedcerts
 
-### 4. 증명서를 이용해 truststore를 만든다.
-
-keytool -list -v -keystore truststore
 
 keystore 는 src/server에, truststore는 src.client에 위치해야 함
 
