@@ -104,9 +104,9 @@ public class Server extends UnicastRemoteObject implements Draw {
             password = args[0];
         }
 
-        // System.setProperty("javax.net.ssl.keyStore", "CatchMindKey");
-        // System.setProperty("javax.net.ssl.keyStorePassword", password);
-        //System.setProperty("javax.net.debug", "ssl");
+        System.setProperty("javax.net.ssl.keyStore", "CatchMindKey");
+        System.setProperty("javax.net.ssl.keyStorePassword", password);
+        System.setProperty("javax.net.debug", "ssl");
 
         try {
             RMIServerSocketFactory rmissf = new SslRMIServerSocketFactory();

@@ -94,9 +94,9 @@ public class Client {
             password = args[0];
         }
 
-        // System.setProperty("javax.net.ssl.trustStore", "trustedcerts");
-        // System.setProperty("javax.net.ssl.trustStorePassword", password);
-        //System.setProperty("javax.net.debug", "ssl");
+        System.setProperty("javax.net.ssl.trustStore", "trustedcerts");
+        System.setProperty("javax.net.ssl.trustStorePassword", password);
+        System.setProperty("javax.net.debug", "ssl");
 
         // Draw Interface를 실행하는 SSLRMIClient를 연다.
         try {
