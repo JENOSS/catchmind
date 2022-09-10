@@ -2,7 +2,7 @@
 
 SslSocketFactory와 SslRMISocketFactory로 구현한 캐치마인드 게임
 
-# youtube
+# Video
 [![Video Label](http://img.youtube.com/vi/sayjV7Nh8t4/0.jpg)](https://www.youtube.com/watch?v=sayjV7Nh8t4)
 
 ## build
