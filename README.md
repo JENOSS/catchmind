@@ -1,6 +1,12 @@
 # CatchMind
 
-SslSocketFactory와 SslRMISocketFactory로 구현한 캐치마인드 게임
+캐치 마인드 - JAVA Swing으로 구현한 Catch Mind 게임
+
+# About
+- SslSocketFactory와 SslRMISocketFactory 사용
+- SSLSocketFactory를 사용한 SSL 소켓 프로그래밍으로, 채팅 및 그림 그리기 기능 제공
+- Server에서 RMI를 이용하여 Object를 제공, Client에서 메소드 호출
+- Swing을 이용하여 GUI 제공
 
 # Video
 [![Video Label](http://img.youtube.com/vi/sayjV7Nh8t4/0.jpg)](https://www.youtube.com/watch?v=sayjV7Nh8t4)
